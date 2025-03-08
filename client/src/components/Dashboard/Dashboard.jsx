@@ -24,7 +24,7 @@ export function Dashboard() {
   
     const fetchUser = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/users/dashboard", {
+        const response = await fetch("/api/users/dashboard", {
           method: "GET",
           credentials: "include",
           headers: {
