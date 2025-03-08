@@ -13,7 +13,7 @@ const googleDriveRoutes = require("./routes/googleDriveRoutes")
 require("./config/passport")
 const app = express();
 app.use(cookieParser());
-app.use(cors({ origin: "http://localhost:5173", credentials: true }));
+app.use(cors({ origin: "http://letter-app-ten.vercel.app/", credentials: true }));
 app.use(express.json());
 
 app.use(
