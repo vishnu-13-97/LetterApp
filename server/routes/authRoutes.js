@@ -15,10 +15,10 @@ router.get(
 
 router.get(
   "/google/callback",
-  passport.authenticate("google", { failureRedirect: "http://localhost:5173/login" }),
+  passport.authenticate("google", { failureRedirect: "http://letter-app-ten.vercel.app/login" }),
   async (req, res) => {
     if (!req.user) {
-      return res.redirect("http://localhost:5173/login");
+      return res.redirect("http://letter-app-ten.vercel.app/login");
     }
 
     // ✅ Extract user data & generate JWT Token
@@ -39,7 +39,7 @@ router.get(
       maxAge: 7 * 24 * 60 * 60 * 1000, // 7 days
     });
 
-    res.redirect(`http://localhost:5173/login?token=${token}`);
+    res.redirect(`http://letter-app-ten.vercel.app/login?token=${token}`);
   }
 );
 
