@@ -9,7 +9,7 @@ import { useNavigate } from "react-router-dom";
 export function SignupForm({ className, ...props }) {
 const navigate = useNavigate()
   const googleLogin = () => {
-    window.location.href = "http://localhost:5000/api/auth/google";
+    window.location.href = "/api/auth/google";
   };
 
   const [formData, setFormData] = useState({
