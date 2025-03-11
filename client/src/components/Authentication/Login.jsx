@@ -30,7 +30,7 @@ export function LoginForm({ className, ...props }) {
   
     if (token) {
       localStorage.setItem("token", token);
-      window.location.href = "/dashboard"; // Redirect to protected route
+      window.location.href = "https://letterapp-0uug.onrender.com/api/users/dashboard"; // Redirect to protected route
     }
   }, []);
 
