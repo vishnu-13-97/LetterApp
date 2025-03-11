@@ -24,7 +24,7 @@ export function Dashboard() {
   
     const fetchUser = async () => {
       try {
-        const response = await fetch("/api/users/dashboard", {
+        const response = await fetch("https://letterapp-0uug.onrender.com/api/users/dashboard", {
           method: "GET",
           credentials: "include",
           headers: {
@@ -86,7 +86,7 @@ export function Dashboard() {
         return;
       }
   
-      const response = await fetch("/api/drafts", {
+      const response = await fetch("https://letterapp-0uug.onrender.com/api/drafts", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
