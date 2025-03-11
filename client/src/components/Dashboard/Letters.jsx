@@ -30,7 +30,7 @@ export function Letters() {
           throw new Error("Authentication token not found. Please log in.");
         }
   
-        const response = await fetch(`/api/drafts/${user?.id}`, {
+        const response = await fetch(`https://letterapp-0uug.onrender.com/api/drafts/${user?.id}`, {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
@@ -70,7 +70,7 @@ export function Letters() {
         return;
       }
   
-      const response = await fetch(`/api/drafts/${draftId}`, {
+      const response = await fetch(`https://letterapp-0uug.onrender.com/api/drafts/${draftId}`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${token}`, // ✅ Include JWT token
@@ -102,7 +102,7 @@ export function Letters() {
         return;
       }
   
-      const response = await fetch(`/api/drafts/${editingDraft._id}`, {
+      const response = await fetch(`https://letterapp-0uug.onrender.com/api/drafts/${editingDraft._id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
