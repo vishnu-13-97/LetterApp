@@ -4,7 +4,7 @@ export function HomePage() {
 
 
   const googleLogin = () => {
-    window.location.href = "/api/auth/google";
+    window.location.href = "https://letterapp-0uug.onrender.com/api/auth/google";
   };
 
   return (
