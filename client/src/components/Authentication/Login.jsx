@@ -17,7 +17,7 @@ export function LoginForm({ className, ...props }) {
 
   
   const googleLogin = () => {
-    window.location.href = `/api/auth/google`;
+    window.location.href = `https://letterapp-0uug.onrender.com/api/auth/google`;
   };
 
 
@@ -48,7 +48,7 @@ export function LoginForm({ className, ...props }) {
     setLoading(true);
 
     try {
-      const response = await axios.post("/api/users/login", { email, password });
+      const response = await axios.post("https://letterapp-0uug.onrender.com/api/users/login", { email, password });
 
       if (response.data.token) {
    
