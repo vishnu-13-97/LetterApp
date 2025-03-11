@@ -37,7 +37,7 @@ export function Drive() {
 
     const fetchFiles = async () => {
       try {
-        const response = await fetch("/api/drive/list", {
+        const response = await fetch("https://letterapp-0uug.onrender.com/api/drive/list", {
           method: "GET",
           headers: { Authorization: `Bearer ${token}` },
         });
@@ -73,7 +73,7 @@ export function Drive() {
 
     try {
       const token = localStorage.getItem("token");
-      const response = await fetch(`/api/drive/delete/${fileId}`, {
+      const response = await fetch(`https://letterapp-0uug.onrender.com/api/drive/delete/${fileId}`, {
         method: "DELETE",
         headers: { Authorization: `Bearer ${token}` },
       });
